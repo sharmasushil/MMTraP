@@ -25,9 +25,14 @@ Overview of an autonomous driving pipeline using multi-sensor input. Data from c
 ## Our Contribution  ⚙️
 
 
--  Our  proposal architecture (\textbf{BEVSeg2GTA}) offers an approach to accomplish vehicle segmentation and ego vehicle trajectory prediction tasks jointly, thereby achieving state-of-the-art results in both segmentation and trajectory prediction compared on the nuScenes dataset.
--  Our proposal integrates GNNs into the BEV architecture to capture the spatial relationships of the host vehicle and nearby objects, where the weights of the connections are inverses of the distances.
--  STPN is then integrated for trajectory estimation, so our network proposal considers both spatial and temporal aspects of the problem.
+- We introduce MMTraP, a multi-sensor fusion architecture for BEV perception in autonomous driving. MMTraP combines data from cameras, LiDAR, and radar using a transformer-based framework to improve multi-vehicle trajectory prediction.
+
+- Our approach effectively enhances moving object segmentation (vehicles only) accuracy in BEV space by combining data from multiple sensors. We conduct a detailed ablation study comparing unimodal and multimodal sensor configurations for vehicle segmentation at various distances. 
+    
+- We integrate a hierarchical attention mechanism \cite{zhou2022hivt} that captures both local and global context in the BEV representation, improving multi-vehicle trajectory predictions.
+
+  -  MMTraP achieves state-of-the-art results in vehicle segmentation and trajectory prediction across diverse conditions.
+    
 
 
     
