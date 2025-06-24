@@ -114,7 +114,7 @@ Best results are marked in **bold**, second-best in *italics*.
 
 ## Qualitative results 📈
 
-Qualitative outcomes of our model (BEVSeg2GTA): The six camera perspectives of nuScenes surrounding the vehicle are shown, with the top three facing forward and the bottom three facing backward. Ground truth segmentation is displayed on the right. Our trajectory prediction approach integrates improved map-view segmentation with ego vehicle trajectory (second from the right), and it is compared to the LSS method  and the CVT method  (third and fourth from the right)
+Trajectory prediction performance under different weather and lighting conditions. The left section presents multi-view camera images from the nuScenes dataset in sunny, rainy, and nighttime conditions. The middle section shows the predicted trajectories for moving vehicles, while the right section provides the corresponding ground truth trajectories. Blue circle indicate areas where trajectory information is lost due to challenging conditions, while red boxes highlight minor missing details after sensor fusion. Despite these small errors, the model successfully captures vehicle movements, demonstrating its ability to handle different environmental conditions.
 
 <img src="https://github.com/user-attachments/assets/cf023e34-fbc3-46dd-9ad8-bd5ac6efb9af" width ="650">
 
