@@ -50,12 +50,10 @@ The MMTraP architecture integrates data from multi-view cameras, LiDAR, and rada
 
 
 
-## 📊 Vehicle Segmentation Results on nuScenes Dataset
-We compare the performance of different methods for vehicle segmentation on the nuScenes dataset, including our proposed approach. The results are evaluated using Intersection over Union (IoU) for the BEV segmentation task.
+## 📊 Ablation Study 
+Comparison of various methods for vehicle segmentation on the nuScenes dataset, including our proposed approach. The evaluation is based on IoU scores (\%) for the BEV segmentation task. $\dagger$ Methods marked with a symbol are originally designed for different tasks (e.g., object detection), but are included here for comparison in the context of segmentation performance.
+### BEV Performance Comparison
 
-## BEV Performance Comparison
-
-## BEV Performance Comparison
 
 | **Method**         | **Sensor Modality** | **Vehicles ↑** | **Drivable Area ↑** | **Lane ↑** | **mIOU ↑** |
 |--------------------|---------------------|----------------|----------------------|------------|-------------|
