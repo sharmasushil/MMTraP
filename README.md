@@ -76,27 +76,28 @@ Comparison of various methods for vehicle segmentation on the nuScenes dataset, 
 
 
 
+#### nuScenes Evaluation – 6-Second Prediction Horizon
+
+**Metrics:** Minimum Average Displacement Error (**MinADE**) and Final Displacement Error (**MinFDE**).  
+Best results are marked in **bold**, second-best in *italics*.
+
+| **Method**          | **MinADE₅ ↓** | **MinADE₁₀ ↓** | **MinADE₁₅ ↓** | **MinFDE₅ ↓** | **MinFDE₁₀ ↓** | **MinFDE₁₅ ↓** | **MissRate₅,₂ ↓** | **MissRate₁₀,₂ ↓** |
+|---------------------|---------------|----------------|----------------|----------------|-----------------|-----------------|--------------------|---------------------|
+| Const. Vel and Yaw  | 4.61          | 4.61           | 4.61           | 11.21          | 11.21           | 11.21           | 0.91               | 0.91                |
+| Physics oracle      | 3.69          | 3.69           | 3.69           | 9.06           | 9.06            | 9.06            | 0.88               | 0.88                |
+| CoverNet            | 2.62          | 1.92           | 1.63           | 11.36          | -               | -               | 0.76               | 0.64                |
+| Trajectron++        | 1.88          | 1.51           | -              | -              | -               | -               | 0.70               | 0.64                |
+| MTP                 | 2.22          | 1.74           | 1.55           | 4.83           | 3.54            | 3.05            | 0.74               | 0.67                |
+| MultiPath           | *1.78*        | 1.55           | 1.52           | *3.62*         | 2.93            | 2.89            | 0.78               | 0.76                |
+| MHA-JAM             | 1.85          | *1.24*         | **1.03**       | 3.72           | *2.23*          | *1.67*          | *0.60*             | **0.46**            |
+| **MMTraP (Ours)**   | **1.59**      | **1.14**       | *1.09*         | **3.59**       | **2.09**        | **1.59**        | **0.53**           | *0.48*              |
 
 
 
 
 
-## 🚗 Trajectory Prediction Results on nuScenes Dataset
-Evaluation of competing methods on the nuScenes dataset, analyzing Minimum Average Displacement Error (MinADE) and Final Displacement Error (MinFDE) over a 6-second prediction horizon.
 
-| **Method**               | **MinADE₅ ↓** | **MinADE₁₀ ↓** | **MinADE₁₅ ↓** | **MinFDE₅ ↓** | **MinFDE₁₀ ↓** | **MinFDE₁₅ ↓** | **MissRate₍₅,₂₎ ↓** | **MissRate₍₁₀,₂₎ ↓** |
-|--------------------------|---------------|----------------|----------------|---------------|----------------|----------------|----------------------|-----------------------|
-| Constant Velocity & Yaw | 4.61          | 4.61           | 4.61           | 11.21         | 11.21          | 11.21          | 0.91                 | 0.91                  |
-| Physics Oracle           | 3.69          | 3.69           | 3.69           | 9.06          | 9.06           | 9.06           | 0.88                 | 0.88                  |
-| CoverNet             | 2.62          | 1.92           | 1.63           | 11.36         | -              | -              | 0.76                 | 0.64                  |
-| Trajectron++         | 1.88          | 1.51           | -              | -             | -              | -              | 0.70                 | 0.64                  |
-| MTP                  | 2.22          | 1.74           | 1.55           | 4.83          | 3.54           | 3.05           | 0.74                 | 0.67                  |
-| MultiPath          | *1.78*        | 1.55           | 1.52           | **3.62**      | 2.93           | 2.89           | 0.78                 | 0.76                  |
-| MHA-JAM             | 1.85          | *1.24*         | **1.03**       | 3.72          | *2.23*         | *1.67*         | *0.60*               | **0.46**              |
-| **Ours**                 | **1.63**      | **1.19**       | *1.06*         | *3.63*        | **2.13**       | **1.65**       | **0.56**             | *0.51*                |
 
-Bold = Best result, Italics = Second best
-Missing values are marked with -
 
 ## Qualitative results 📈
 
