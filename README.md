@@ -14,7 +14,7 @@ Accurate detection and trajectory prediction of moving vehicles are essential fo
 
 
 ## Our Overview 📑
-The BEVSeg2GTA framework aims to enhance ego vehicle trajectory prediction by integrating an encoder-decoder transformer and a GNN. The framework begins with a projection module, which transforms the input multi-camera views and map information into a BEV perspective using an encoder-decoder transformer. The segmentation output from this module is then fed into the GNN, which is utilized to construct a graph representing spatial information. This graph is subsequently employed as input into an STPN, which produces predictions of the ego vehicle's trajectory.
+Overview of an autonomous driving pipeline using multi-sensor input. Data from camera, radar, and LiDAR sensors is processed through perception, prediction, and planning stages to understand the environment, predict object motion, and generate a safe driving plan, followed by vehicle control decisions.
 
 <img src="https://github.com/user-attachments/assets/ba98c000-debc-44a3-bc9b-2865923b900c" width ="850">
 
