@@ -41,7 +41,9 @@ Overview of an autonomous driving pipeline using multi-sensor input. Data from c
 The MMTraP architecture integrates data from multi-view cameras, LiDAR, and radar to produce a unified BEV representation. Camera features are transformed into BEV. LiDAR and radar data are processed into voxel-based features and flattened into BEV representations. These BEV features are fused, encoded, and used for motion segmentation to identify moving agents. A hierarchical attention mechanism models interactions between agents and the ego vehicle. Finally, a decoder predicts multi-agent trajectories for safe and efficient autonomous navigation.
 
 
-<img src="https://github.com/user-attachments/assets/3a229d04-1208-472b-8770-53b4f361314c" width ="850">
+<img src="https://github.com/user-attachments/assets/e96a96f3-4c37-4c98-94e0-cc12d0479d85" width ="850">
+
+
 
 
 
