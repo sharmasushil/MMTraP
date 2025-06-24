@@ -38,9 +38,10 @@ Overview of an autonomous driving pipeline using multi-sensor input. Data from c
     
 
 ## Our proposed architecture ⛓️
-Our proposed BEVSeg2GTA architecture: Our method for jointly segmenting vehicles and predicting the trajectory of the ego vehicle consists of several stages. Initially, we extract image features across different scales and integrate a camera-aware positional embedding to address perspective distortion. Following this, we employ map-view positional embedding and cross-attention layers to gather contextual insights from various viewpoints and enhance the segmentation accuracy of the ego vehicle. The segmented results are then passed through a $k$NN to generate embeddings representing the surrounding environment. These embeddings are further utilized as input to a probabilistic layer for trajectory prediction, leveraging contextual information from the surrounding scene. Stars are used to indicate the novel contributions of this work (\textcolor{red}{red} and \textcolor{green}{green} indicating major and minor component contributions, respectively.
+The MMTraP architecture integrates data from multi-view cameras, LiDAR, and radar to produce a unified BEV representation. Camera features are transformed into BEV. LiDAR and radar data are processed into voxel-based features and flattened into BEV representations. These BEV features are fused, encoded, and used for motion segmentation to identify moving agents. A hierarchical attention mechanism models interactions between agents and the ego vehicle. Finally, a decoder predicts multi-agent trajectories for safe and efficient autonomous navigation.
 
-<img src="https://github.com/user-attachments/assets/f2287b30-3123-4085-8455-05eab78b23d1" width ="850">
+
+<img src="https://github.com/user-attachments/assets/3a229d04-1208-472b-8770-53b4f361314c" width ="850">
 
 
 
