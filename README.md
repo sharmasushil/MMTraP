@@ -6,7 +6,8 @@
     
 </p>
 
-## BEVSeg2GTA: Joint Vehicle Segmentation and Graph Neural Networks for Ego Vehicle Trajectory Prediction in Bird's-Eye-View
+## MMTraP: Multi-Sensor Multi-Agent Trajectory Prediction in BEV
+
 
 
 
