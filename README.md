@@ -1,5 +1,5 @@
 <p align="center">
-    <h4 align="center"><a href="https://ieeexplore.ieee.org/abstract/document/11016806">📑 IEEE OJVT</a>  | <a href="https://drive.google.com/drive/folders/1JPb64bGV88ymZkJrUBaKQg12tToZVF7T?usp=sharing">📂 Dataset</a> | <a href="https://youtu.be/DZDqGbkInko">🎬 Video</a> | <a href="https://docs.google.com/presentation/d/1L2y97B4u0trTz-H3UHlgdsDDh2rs03XE/edit#slide=id.p1">🎙️Talk</a>    </h4> 
+    <h4 align="center"><a href="https://ieeexplore.ieee.org/abstract/document/11016806">📑 IEEE OJVT</a>  |  <a href="https://youtu.be/DZDqGbkInko">🎬 Video</a>    </h4> 
 </p>
 
 ## MMTraP: Multi-Sensor Multi-Agent Trajectory Prediction in BEV
