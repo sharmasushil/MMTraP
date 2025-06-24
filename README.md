@@ -126,16 +126,16 @@ Trajectory prediction performance under different weather and lighting condition
 If you find this work useful, please cite:
 
 ```bibtex
-@ARTICLE{10679361,
+@ARTICLE{11016806,
   author={Sharma, Sushil and Das, Arindam and Sistu, Ganesh and Halton, Mark and Eising, Ciarán},
-  journal={IEEE Access}, 
-  title={BEVSeg2GTA: Joint Vehicle Segmentation and Graph Neural Networks for Ego Vehicle Trajectory Prediction in Bird’s-Eye-View}, 
-  year={2024},
-  volume={12},
-  pages={132159--132174},
-  doi={10.1109/ACCESS.2024.3459595}
-}
-
+  journal={IEEE Open Journal of Vehicular Technology}, 
+  title={MMTraP: Multi-Sensor Multi-Agent Trajectory Prediction in BEV}, 
+  year={2025},
+  volume={6},
+  number={},
+  pages={1551-1567},
+  keywords={Trajectory;Radar;Autonomous vehicles;Cameras;Laser radar;Accuracy;Sensor fusion;Motion segmentation;Computer vision;Meteorology;Sensor fusion;encoder-decoder transformer;bird's-eye-view;semantic segmentation, multi-agent trajectory prediction},
+  doi={10.1109/OJVT.2025.3574385}}
 
 
 
