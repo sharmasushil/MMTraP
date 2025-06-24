@@ -1,7 +1,8 @@
 
 
 <p align="center">
-    <h4 align="center"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10679361">📑 IEEE Access</a>  
+    <h4 align="center"><a href="https://ieeexplore.ieee.org/abstract/document/11016806">📑 IEEE OJVT</a>  
+
     
 </p>
 
