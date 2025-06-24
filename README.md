@@ -52,7 +52,7 @@ The MMTraP architecture integrates data from multi-view cameras, LiDAR, and rada
 
 ## 📊 Ablation Study 
 Comparison of various methods for vehicle segmentation on the nuScenes dataset, including our proposed approach. The evaluation is based on IoU scores (\%) for the BEV segmentation task. $\dagger$ Methods marked with a symbol are originally designed for different tasks (e.g., object detection), but are included here for comparison in the context of segmentation performance.
-### BEV Performance Comparison
+- ### BEV Performance Comparison
 
 
 | **Method**         | **Sensor Modality** | **Vehicles ↑** | **Drivable Area ↑** | **Lane ↑** | **mIOU ↑** |
@@ -75,7 +75,7 @@ Comparison of various methods for vehicle segmentation on the nuScenes dataset, 
 | **MMTraP (Ours)**  | C+R+L               | **63.23**      | **85.78**            | **44.90**  | **64.63**   |
 
 
-### Vehicle Class Segmentation Performance under Varying Conditions
+- ### Vehicle Class Segmentation Performance under Varying Conditions
 
 Our proposed method (MMTraP) performs reliably under varying lighting and weather conditions due to multi-sensor learning.  
 The table shows vehicle class segmentation IoU (%) for Camera, Radar, and Lidar.  
@@ -89,7 +89,7 @@ The table shows vehicle class segmentation IoU (%) for Camera, Radar, and Lidar.
 
 
 
-### nuScenes Evaluation – 6-Second Prediction Horizon
+- ### nuScenes Evaluation – 6-Second Prediction Horizon
 
 **Metrics:** Minimum Average Displacement Error (**MinADE**) and Final Displacement Error (**MinFDE**).  
 Best results are marked in **bold**, second-best in *italics*.
