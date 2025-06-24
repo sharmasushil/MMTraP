@@ -47,28 +47,36 @@ The MMTraP architecture integrates data from multi-view cameras, LiDAR, and rada
 
 
 
-    
-
-## kNN Algorthim Analsis ⛓️
-Exploring how changes in the parameter k, representing the number of nearest neighbors analyzed in the kNN algorithm, impact the connectivity and layout of nodes and edges in a graph. In the visualization, the red box indicates the ego vehicle, the blue boxes represent other agents in the scene, and the red dots denote the nodes.
-
-<img src="https://github.com/user-attachments/assets/68ea478f-88bb-40e7-b3c6-97ec33042d47" width ="850">
-
 
 
 
 ## 📊 Vehicle Segmentation Results on nuScenes Dataset
 We compare the performance of different methods for vehicle segmentation on the nuScenes dataset, including our proposed approach. The results are evaluated using Intersection over Union (IoU) for the BEV segmentation task.
 
-| **Method**        | **Surround-View Camera** | **Input Image Size (px)** | **Feature Extractor** | **Grid Scale / Unit Size** | **FPS** | **Vehicle IoU (%) ↑** |
-|-------------------|---------------------------|----------------------------|------------------------|-----------------------------|--------|-----------------------|
-| PanSeg         | ✗                         | 448 × 768                  | EfficientDet           | -                           | -      | 35.06                |
-| GitNet         | ✗                         | -                          | ResNet50               | 200×200 / 0.25m             | -      | 35.90                |
-| M2BEV          | ✓                         | 900 × 1600                 | ResNeXt-101            | 200×200 / 0.5m              | -      | -                    |
-| LSS            | ✓                         | 128 × 352                  | EfficientNet-B0        | 200×200 / 0.5m              | 25     | 32.1                 |
-| CVT            | ✓                         | 200 × 200                  | EfficientNet-B4        | 200×200 / 0.5m              | 35     | 36.0                 |
-| CoBEVT         | ✓                         | 200 × 200                  | EfficientNet-B4        | 200×200 / 0.5m              | 35     | 37.1                 |
-| **Ours**       | ✓                         | 200 × 200                  | EfficientNet-B4        | 200×200 / 0.5m              | 35     | **37.9**             |
+## BEV Performance Comparison
+
+| **Method** | **Sensor Modality** | **Vehicles ↑** | **Drivable Area ↑** | **Lane ↑** | **mIOU ↑** |
+|------------|---------------------|----------------|----------------------|------------|-------------|
+| OFT [[1]](#1) | C | 30.1 | 72.2 | 16.9 | 39.7 |
+| LSS [[2]](#2) | C | 32.1 | 74.1 | 18.8 | 41.7 |
+| FIERY [[3]](#3) | C | 35.8 | - | - | - |
+| CVT [[4]](#4) | C | 36.0 | 74.3 | 29.4 | 46.6 |
+| CoBEVT [[5]](#5) | C | 37.1 | - | - | - |
+| **MMTraP (Ours)** | C | **37.9** | **75.5** | **30.5** | **47.9** |
+| CenterFusion† [[6]](#6) | C+R | 46.5 | - | - | - |
+| FUTR3D† [[7]](#7) | C+R | 46.6 | - | - | - |
+| Simple-BEV [[8]](#8) | C+R | 55.7 | - | - | - |
+| **MMTraP (Ours)** | C+R | **58.16** | **70.23** | **39.20** | **53.88** |
+| PointPainting† [[9]](#9) | C+L | 60.2 | 75.9 | 41.9 | 59.3 |
+| Simple-BEV [[8]](#8) | C+L | 60.8 | - | - | - |
+| BEVFusion [[10]](#10) | C+L | - | 85.5 | 53.7 | - |
+| **MMTraP (Ours)** | C+L | **62.86** | **85.67** | 43.24 | **62.51** |
+| BEVMOSNet [[11]](#11) | C+R+L | 61.82 | - | - | - |
+| **MMTraP (Ours)** | C+R+L | **63.23** | **85.78** | **44.90** | **64.63** |
+
+
+
+
 
 
 
