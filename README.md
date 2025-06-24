@@ -18,7 +18,7 @@ Accurate detection and trajectory prediction of moving vehicles are essential fo
 ## Our Overview 📑
 Overview of an autonomous driving pipeline using multi-sensor input. Data from camera, radar, and LiDAR sensors is processed through perception, prediction, and planning stages to understand the environment, predict object motion, and generate a safe driving plan, followed by vehicle control decisions.
 
-<img src="https://github.com/user-attachments/assets/ba98c000-debc-44a3-bc9b-2865923b900c" width ="850">
+<img src="https://github.com/user-attachments/assets/b5946a03-0c43-4f82-b12a-e8610f596a83" width ="850">
 
 
 
