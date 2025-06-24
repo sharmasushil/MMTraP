@@ -52,7 +52,7 @@ The MMTraP architecture integrates data from multi-view cameras, LiDAR, and rada
 
 ## 📊 Ablation Study 
 Comparison of various methods for vehicle segmentation on the nuScenes dataset, including our proposed approach. The evaluation is based on IoU scores (\%) for the BEV segmentation task. $\dagger$ Methods marked with a symbol are originally designed for different tasks (e.g., object detection), but are included here for comparison in the context of segmentation performance.
-### BEV Performance Comparison
+# BEV Performance Comparison
 
 
 | **Method**         | **Sensor Modality** | **Vehicles ↑** | **Drivable Area ↑** | **Lane ↑** | **mIOU ↑** |
@@ -75,8 +75,21 @@ Comparison of various methods for vehicle segmentation on the nuScenes dataset, 
 | **MMTraP (Ours)**  | C+R+L               | **63.23**      | **85.78**            | **44.90**  | **64.63**   |
 
 
+# Vehicle Class Segmentation Performance under Varying Conditions
 
-#### nuScenes Evaluation – 6-Second Prediction Horizon
+Our proposed method (MMTraP) performs reliably under varying lighting and weather conditions due to multi-sensor learning.  
+The table shows vehicle class segmentation IoU (%) for Camera, Radar, and Lidar.  
+`Abs. Diff.` refers to the absolute difference between conditions.
+
+| **Sensor Modality**         | **Day** | **Night** | **Abs. Diff.** | **Sunny** | **Rainy** | **Abs. Diff.** |
+|-----------------------------|---------|-----------|----------------|-----------|-----------|----------------|
+| Camera                      | 39.8    | 21.1      | 18.7           | 37.8      | 28.3      | 9.5            |
+| Camera + Lidar              | 62.8    | 47.5      | 15.3           | 61.8      | 54.4      | 7.4            |
+| **Camera + Lidar + Radar**  | **63.8**| **52.3**  | **11.5**       | **64.3**  | **57.7**  | **6.6**        |
+
+
+
+# nuScenes Evaluation – 6-Second Prediction Horizon
 
 **Metrics:** Minimum Average Displacement Error (**MinADE**) and Final Displacement Error (**MinFDE**).  
 Best results are marked in **bold**, second-best in *italics*.
